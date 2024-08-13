@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Interview Insights</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <h2>Prep-Hub</h2>
+        </div>
+        <div class="text">
+            <div>
+                <h4 class="button"><a href="/">HOME</a></h4>
+            </div>
+            <div>
+                <h4 class="button"><a href="/loginverf">LOG IN</a></h4>
+            </div>
+            <div>
+                <h4 class="button">SIGN UP</h4>
+            </div>
+        </div>
+    </nav>
+    <form action="/signUp" method="POST">
+        <div class="signup-container">
+            <h2>Sign Up</h2>
+            <div class="input-container">
+                <input type="text" id="name" name="name" required>
+                <label for="name">Name</label>
+            </div>
+            <div class="input-container">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-container">
+                <input type="text" id="institute" name="institute" required>
+                <label for="institute">Institute</label>
+            </div>
+            <div class="input-container">
+                <input type="number" id="year" name="year" required>
+                <label for="year">Year of Passing</label>
+            </div>
+            <div class="input-container">
+                <input type="password" id="password" name="password" required>
+                <label for="password">Password</label>
+            </div>
+            <button type="submit">Sign Up</button>
+        </div>
+    </form>
+</body>
+</html>

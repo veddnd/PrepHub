@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prep-Hub</title>
+    <link rel="stylesheet" href="css/web1.css">
+</head>
+<body class="light">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images(t2)/int_logo.png" alt="Logo">
+                <h3>Prep-Hub</h3>
+            </div>
+            <nav class="links">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/developers">Our Developers</a></li>
+                    <li><a href="/signup">SignUp</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="big-wrapper">
+        <section class="showcase-area">
+            <div class="container">
+                <div class="big-title">
+                    <h1>Learn from the best,</h1>
+                    <h1>Get hired.</h1>
+                    <p class="text">Welcome to our interview experience website, where you can find real-world stories and expert advice to help you succeed in your job interviews. Discover insights from successful candidates and take your interview game to the next level.</p>
+                    <a href="/loginverf" class="btn">Get Started</a>
+                </div>
+                <div class="showcase-image">
+                    <img src="images(t2)/home.png" alt="Interview Image">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <button id="toggleThemeBtn"></button>
+
+    <script>
+        const toggleThemeBtn = document.getElementById('toggleThemeBtn');
+        toggleThemeBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+        });
+    </script>
+</body>
+</html>

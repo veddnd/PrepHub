@@ -1,0 +1,185 @@
+/* Resetting default styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f5f9fc;
+    color: #333;
+}
+
+/* Dark theme styles */
+body.dark {
+    background-color: #333;
+    color: #f5f9fc;
+}
+
+body.dark header {
+    background-color:  #333;
+    /* border-bottom: 1px solid #555; */
+    color: #f5f9fc;
+}
+
+body.dark .logo h3 {
+    color: #f5f9fc;
+}
+
+body.dark nav ul li a {
+    color: #f5f9fc;
+}
+
+body.dark nav ul li a:hover {
+    background-color: #64bcf4;
+}
+
+body.dark .btn {
+    background-color: #64bcf4;
+}
+
+body.dark .big-title h1,
+body.dark .big-title p {
+    color: #f5f9fc;
+}
+
+/* Header styling */
+header {
+    background-color: #f5f9fc;
+    padding: 1rem 0;
+    /* border-bottom: 1px solid #e0e0e0; */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 0.5rem;
+}
+
+.logo h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bolder;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #64bcf4;
+    /* color: #f5f9fc; */
+}
+
+/* Main section styling */
+.big-wrapper {
+    padding: 3rem 0;
+    margin-top:50px;
+}
+
+.showcase-area .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 100px;
+}
+
+.big-title {
+    max-width: 600px;
+    padding: 3rem 0;
+    row-gap: 100px;
+}
+
+.big-title h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.big-title  p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+p {
+    letter-spacing: 1.5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #64bcf4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #4a9edb;
+}
+
+.showcase-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Toggle Theme Button */
+#toggleThemeBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 0.5rem 1rem;
+    background-color: #666;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    margin-right: 1300px;
+    margin-bottom: 20px;
+    
+}
+
+#toggleThemeBtn:hover {
+    background-color: #64bcf4;
+}
