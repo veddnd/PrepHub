@@ -16,6 +16,8 @@ const template_path = path.join(__dirname, "../templates/views");
 //hbs.registerPartials(parial_path);
 
 app.set("view engine", "hbs");
+
+
 app.set("views", template_path);
 app.use(express.static(static_path));
 
@@ -72,6 +74,7 @@ app.get('/companies', (req, resp) => {
 });
 
 app.post('/loginverf', async (req, resp) => {
+    
     const user_pass = req.body.password;
 
     const user = await Authentication.findOne({name: req.body.username});
@@ -113,6 +116,6 @@ app.post('/signUp', async (req, res) => {
 
 
 
-app.listen(port, () => {
+app.listen(port , () => {
     console.log("port is running at " + port);
 });
